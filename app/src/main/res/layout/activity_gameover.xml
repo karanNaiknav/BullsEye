@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameOverActivity">
+
+    <TextView
+        android:id="@+id/game_over"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="GAME OVER"
+        android:textStyle="bold"
+        android:textSize="40sp"/>
+
+    <TextView
+        android:id="@+id/top_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/game_over"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Top Score: 1200"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/current_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_score"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Current Score: 800"
+        android:textSize="20sp"
+        />
+
+    <!--Leadership Board -->
+    <ListView
+        android:id="@+id/leaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/current_score"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@android:color/darker_gray"
+        android:divider="@android:color/white"
+        android:dividerHeight="1dp" />
+
+    <Button
+        android:id="@+id/review_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leaderboard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="REVIEW APP"
+        />
+
+    <Button
+        android:id="@+id/play_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/review_app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="PLAY AGAIN"
+        />
+
+</RelativeLayout>

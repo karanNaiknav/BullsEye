@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0sp"
+        android:text="Welcome to Bulls Eye!!"
+        android:id="@+id/WelcomeToBullsEye"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/WelcomeToBullsEye"
+        android:text="An interactive shooting game created by:"
+        android:id="@+id/CreatedBy"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/CreatedBy"
+        android:text="Karan Naiknavare, Raymond Yu, Tarun Narahari"
+        android:id="@+id/Authors"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Authors"
+        android:text="Login/Sign-up below:"
+        android:id="@+id/LoginPrompt"
+        android:background="@drawable/rounded_green_background"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/LoginPrompt"
+        android:text="Name:"
+        android:id="@+id/TextViewName"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/userName"
+        android:hint="Jimmy Butler"
+        android:layout_marginTop="5dp"
+        android:layout_alignBottom="@+id/TextViewName"
+        android:layout_below="@+id/LoginPrompt"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/userName"
+        android:text="Email:"
+        android:id="@+id/TextViewEmail"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/userEmail"
+        android:layout_below="@+id/userName"
+        android:hint="JimmyBuckets22@gmail.com"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/userEmail"
+        android:id="@+id/SubmitInfo"
+        android:onClick="gamePage"
+        />
+
+
+</RelativeLayout>
